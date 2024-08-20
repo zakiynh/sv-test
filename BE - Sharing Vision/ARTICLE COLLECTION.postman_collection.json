@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "7ed1e341-0191-4673-aa0f-ddf47323241c",
+		"name": "ARTICLE COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20223253"
+	},
+	"item": [
+		{
+			"name": "get article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{base_url}}:{{portss}}/article/10/0"
+			},
+			"response": []
+		},
+		{
+			"name": "get article id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{base_url}}:{{portss}}/article/10"
+			},
+			"response": []
+		},
+		{
+			"name": "create article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Panasnya Royal Derby RRQ Vs Fnatic ONIC hingga Terciptanya Savage Pertama di MPL ID Season 14 - Indozone\",\r\n  \"Content\": \"Royal Derby antara dua tim besar dengan gelar sang raja, RRQ vs Fnatic ONIC, berlangsung sengit dan membara pada minggu kedua MPL ID Season 14 untuk yang ke-31 kalinya. Pertandingan yang menjadi ajang pembuktian siapa raja sebenarnya dimenangkan telak 2-0 oleh RRQ. Mereka merebut kembali tahta dari tangan sang Raja Langit dan menegaskan bahwa pilar pilar baru yang mereka bangun tidak bisa dipandang remeh.\",\r\n  \"Category\": \"Game\",\r\n  \"Status\": \"Publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{base_url}}:{{portss}}/article/"
+			},
+			"response": []
+		},
+		{
+			"name": "update article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"EDITED Panasnya Royal Derby RRQ Vs Fnatic ONIC hingga Terciptanya Savage Pertama di MPL ID Season 14 - Indozone\",\r\n  \"Content\": \"EDITED Royal Derby antara dua tim besar dengan gelar sang raja, RRQ vs Fnatic ONIC, berlangsung sengit dan membara pada minggu kedua MPL ID Season 14 untuk yang ke-31 kalinya. Pertandingan yang menjadi ajang pembuktian siapa raja sebenarnya dimenangkan telak 2-0 oleh RRQ. Mereka merebut kembali tahta dari tangan sang Raja Langit dan menegaskan bahwa pilar pilar baru yang mereka bangun tidak bisa dipandang remeh.\",\r\n  \"Category\": \"Game\",\r\n  \"Status\": \"Publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{base_url}}:{{portss}}/article/10"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

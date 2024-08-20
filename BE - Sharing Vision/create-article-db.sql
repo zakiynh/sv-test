@@ -1,0 +1,13 @@
+CREATE DATABASE article;
+
+USE article;
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Title VARCHAR(200) NOT NULL,
+    Content TEXT NOT NULL,
+    Category VARCHAR(100),
+    Created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    Status VARCHAR(100) CHECK (Status IN ('Publish', 'Draft', 'Trash'))
+);
